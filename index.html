@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enny's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">E<span>.</span>O</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg-stripe"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Available for Work</div>
+      <h1 class="hero-name">
+        Eniola<br>
+        <span class="line2">Olukade</span>
+      </h1>
+      <p class="hero-desc">Web Designer crafting digital experiences that look sharp and feel alive — fueled by a passion for great games and even greater films.</p>
+      <div class="hero-cta">
+        <a href="#skills" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img class="hero-photo" src="img/WhatsApp Image 2026-05-24 at 2.25.23 PM.jpeg" alt="Eniola Olukade" />
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="reveal">
+      <div class="section-label">// who i am</div>
+      <h2 class="section-title">A Bit About Me</h2>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm Eniola Olukade — a web designer with a sharp eye for layouts, colour, and clean interfaces. I believe great design isn't just how things look, but how they make people feel.</p>
+        <p>When I'm not pushing pixels, you'll find me deep in a game world or lost in a great film. Both teach me storytelling, pacing, and the art of keeping someone engaged — skills that translate directly into how I design for the web.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:1rem">Let's Work Together</a>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Creative Ideas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Films Watched</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">50+</div>
+          <div class="stat-label">Games Played</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Vision, Executed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="reveal">
+      <div class="section-label">// what i do</div>
+      <h2 class="section-title">My Zones</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-card">
+        <span class="skill-icon">🎨</span>
+        <div class="skill-name">Web Design</div>
+        <p class="skill-desc">Crafting clean, responsive, and visually compelling websites. From wireframes to final design — I bring ideas to life with purpose and polish.</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🎮</span>
+        <div class="skill-name">Gaming</div>
+        <p class="skill-desc">An avid gamer who understands UX from the player's perspective. Great game design = great user experience, and I carry that philosophy into every project.</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🎬</span>
+        <div class="skill-name">Film & Cinema</div>
+        <p class="skill-desc">A die-hard cinephile. Watching films sharpens my sense of visual storytelling, pacing, and atmosphere — all ingredients for memorable web design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="reveal">
+      <div class="section-label">// reach out</div>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <p>Have a project in mind? Want to collaborate or just say hi? Hit me up — I'm always open to new conversations and opportunities.</p>
+
+        <a class="contact-item" href="https://wa.me/2349123462424" target="_blank">
+          <div class="contact-item-icon">💬</div>
+          <div class="contact-item-info">
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-value">09123462424</div>
+          </div>
+        </a>
+
+        <a class="contact-item" href="mailto:eniolaolukade2006@email.com">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-info">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">eniolaolukade2006@email.com</div>
+          </div>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" onsubmit="handleForm(event)">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="e.g. Chukwuemeka" required />
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message →</button>
+        <p id="form-success">✓ Message sent! I'll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">E<span>.</span>O</div>
+    <div class="footer-copy">© 2026 Eniola Olukade · Designed with passion</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
